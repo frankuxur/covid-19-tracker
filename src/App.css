@@ -1,0 +1,83 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Spline+Sans:wght@300;400;500;600;700&display=swap');
+
+:root {
+  /* COLORS */
+  /* --Background: #90e8b3; */
+  --Main-background: #fff;
+  --Background: #f0f5f2;
+  --Primary: #81a795;
+  --Text: #292929;
+  --Accent: #90b2a2;
+
+  
+  /* --Main-background: #222;
+  --Text: #f0f5f2;
+  --Primary: #81a795;
+  --Background: #292929; */
+
+  /* FONT */
+  --FF-headers: 'Spline Sans', sans-serif;
+  --FF-content:  'Bai Jamjuree', sans-serif;
+
+  /* FONT-SIZE */
+  --Text-font-size: 1.2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--FF-headers);
+}
+
+button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-family: var(--FF-headers);
+  color: var(--Text);
+  font-size: var(--Text-font-size);
+}
+
+img {
+  max-width: 100%;
+}
+
+a {
+  color: var(--Text);
+  text-decoration: none;
+}
+
+body {
+  font-family: var(--FF-content);
+  color: var(--Text);
+  /* background-color: var(--Main-background); */
+  background-color: var(--Background);
+  font-size: var(--Text-font-size);
+}
+
+body > * {
+  margin-bottom: 1rem;
+}
+
+.main,
+.worldwide,
+.country,
+.footer {
+  background-color: var(--Background);
+}

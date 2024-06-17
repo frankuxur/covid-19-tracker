@@ -1,0 +1,153 @@
+.footer {
+    margin: 1rem;
+    padding: 1rem;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.07);
+    border-radius: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+/* newsletter */
+.newsletter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.newsletter__header p {
+    opacity: 0.6;
+}
+
+.newsletter__form {
+    border: 0.01rem solid #ccc;
+    border-radius: 1rem;
+    border: 0.1rem solid var(--Primary);
+    display: flex;
+    align-items: center;
+}
+
+
+.newsletter__form input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: var(--Text-font-size);
+    padding-left: 0.8rem;
+    color: var(--Primary);
+    font-family: var(--FF-content);
+    padding: 0.3rem 0.6rem;
+}
+
+.newsletter__form button {
+    background-color: var(--Primary);
+    color: var(--Background);
+    padding: 0.4rem 0.6rem;
+    border-radius: 1rem;
+    margin-right: -0.1rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.newsletter__form .ri-arrow-right-line {
+    transition: all 0.3s ease;
+}
+
+.newsletter__form button:hover .ri-arrow-right-line {
+    margin-left: 1rem;
+}
+
+/* links */
+.links {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.links__header h4 {
+    line-height: 1;
+    margin-bottom: 0.4rem;
+    border-radius: 1rem;
+    background-color: var(--Text);
+    color: var(--Background);
+    display: inline-block;
+    padding: 0.4rem;
+    border: 1px solid rgba(255, 255, 255, 0);
+    transition: 0.3s;
+}
+
+.links__header i {
+    font-weight: 100;
+}
+
+.links__header h4:hover {
+    background-image: linear-gradient(45deg, rgba(100, 100, 100, 0.1), rgba(0, 0, 0, 0));
+    backdrop-filter: blur(0.6rem);
+    background-color: rgba(255, 255, 255, 0.18);
+    border-color: rgba(255, 255, 255, 0.18);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, 0.07);
+    color: var(--Primary);
+    cursor: default;
+
+}
+
+.links__header p {
+    opacity: 0.6;
+    width: 26rem;
+}
+
+.links__group {
+    display: flex;
+    gap: 2rem;
+}
+
+.links__group li:not(:first-child) {
+    font-size: 1rem;
+    opacity: 0.6;
+    margin-top: 0.2rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.links__group li:not(:first-child):hover {
+    opacity: 1;
+}
+
+/* socials */
+.socials {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--Primary);
+    position: relative;
+}
+
+.socials::before {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    left: 0;
+    width: 100%;
+    height: 0.01rem;
+    background-color: var(--Primary);
+    opacity: 0.6;
+}
+
+.socials__links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4rem;
+}
+
+.socials__links li {
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.socials__links li:hover {
+    font-size: 1.4rem;
+    color: #ccc;
+}
